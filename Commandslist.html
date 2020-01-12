@@ -1,0 +1,7 @@
+php bin/magento setup:upgrade
+php bin/magento setup:di:compile
+php bin/magento setup:static-content:deploy -f
+php bin/magento setup:static-content:deploy -f en_US
+php bin/magento admin:user:create
+php bin/magento aetup:static-content:deploy -f -a frontend --theme namespace/themename
+
