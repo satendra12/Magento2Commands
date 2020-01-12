@@ -4,4 +4,21 @@ php bin/magento setup:static-content:deploy -f
 php bin/magento setup:static-content:deploy -f en_US
 php bin/magento admin:user:create
 php bin/magento aetup:static-content:deploy -f -a frontend --theme namespace/themename
+composer create-project --repository=https://repo.magento.com/ magento/project-community-edition <install-directory-name>
+ bin/magento setup:install \
+--base-url=http://localhost/magento2ee \
+--db-host=localhost \
+--db-name=magento \
+--db-user=magento \
+--db-password=magento \
+--admin-firstname=admin \
+--admin-lastname=admin \
+--admin-email=admin@admin.com \
+--admin-user=admin \
+--admin-password=admin123 \
+--language=en_US \
+--currency=USD \
+--timezone=America/Chicago \
+--use-rewrites=1
+
 
